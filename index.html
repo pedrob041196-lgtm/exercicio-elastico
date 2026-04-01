@@ -7,7 +7,7 @@
     !function (f, b, e, v, n, t, s) {
       if (f.fbq) return; n = f.fbq = function () {
         n.callMethod ?
-        n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
       };
       if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
       n.queue = []; t = b.createElement(e); t.async = !0;
@@ -151,6 +151,7 @@
       /* Crops the content internally (last value is bottom) */
       object-view-box: inset(0 0 13% 0);
     }
+
     .testimonial-crop {
       object-fit: cover;
       object-position: top;
@@ -193,17 +194,16 @@
       </h1>
 
       <!-- VSL Video -->
-      <div class="w-full max-w-2xl mb-6 rounded-2xl overflow-hidden relative" style="aspect-ratio: 1 / 1;">
-        <video class="w-full h-full vsl-crop" controls playsinline controlsList="nodownload">
-          <source src="videos/site_video_01_esp.mp4" type="video/mp4">
-          Su navegador no admite la etiqueta de video.
-        </video>
+      <div class="w-full max-w-2xl mb-6 rounded-2xl overflow-hidden relative">
+        <div class="video-mask"></div>
+        <script src="https://fast.wistia.com/player.js" async></script><script src="https://fast.wistia.com/embed/kj6k4ifcnf.js" async type="module"></script><style>wistia-player[media-id='kj6k4ifcnf']:not(:defined) { background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/kj6k4ifcnf/swatch'); display: block; filter: blur(5px); padding-top:100.0%; }</style> <wistia-player media-id="kj6k4ifcnf" aspect="1.0"></wistia-player>
       </div>
 
       <!-- Subtítulo -->
       <p class="text-white text-sm sm:text-base max-w-lg mb-8 leading-relaxed text-center">
         <strong class="text-orange-bright">Acceso inmediato a la biblioteca completa</strong> con ejercicios en bandas y
-        mini bands. El <strong class="text-orange-bright">paso a paso exacto</strong> para dominar la ejecución, variar los
+        mini bands. El <strong class="text-orange-bright">paso a paso exacto</strong> para dominar la ejecución, variar
+        los
         estímulos y usar la "resistencia inteligente" para <strong class="text-orange-bright">definir todo el cuerpo en
           tu sala</strong>.
       </p>
@@ -229,7 +229,8 @@
           <img src="https://randomuser.me/api/portraits/women/15.jpg" alt="Alumna"
             class="w-7 h-7 rounded-full border-2 border-dark object-cover" loading="lazy" decoding="async" />
         </div>
-        <p class="text-slate-300 text-sm"><span class="text-orange-bright font-bold">+2 mil</span> personas ya entrenan en
+        <p class="text-slate-300 text-sm"><span class="text-orange-bright font-bold">+2 mil</span> personas ya entrenan
+          en
           casa</p>
       </div>
     </div>
@@ -247,7 +248,8 @@
         <span class="text-white">ellos cuentan con que desistas en el segundo mes.</span>
       </h2>
       <p class="text-slate-400 text-sm sm:text-base max-w-xl mx-auto leading-relaxed">
-        Es la <strong class="text-orange-bright">'Cuota de Ausencia'</strong> la que enriquece a los dueños. Para romper ese
+        Es la <strong class="text-orange-bright">'Cuota de Ausencia'</strong> la que enriquece a los dueños. Para romper
+        ese
         ciclo, descubrimos un método que transforma el
         <strong class="text-white">menor espacio de tu sala en una máquina particular de quema calórica</strong> — sin
         depender de aparatos.
@@ -268,7 +270,8 @@
           <span class="text-white">que vas a recibir!</span>
         </h2>
         <p class="text-slate-400 text-sm sm:text-base max-w-xl mx-auto">
-          Ya basta de improvisar a la hora del entrenamiento. Ten un arsenal completo de ejercicios con bandas elásticas para entrenar en
+          Ya basta de improvisar a la hora del entrenamiento. Ten un arsenal completo de ejercicios con bandas elásticas
+          para entrenar en
           casa.
         </p>
       </div>
@@ -487,7 +490,8 @@
               <img src="images/benefit_variedade.png" alt="Variedad Infinita" class="w-full h-full object-cover"
                 loading="lazy" decoding="async" />
             </div>
-            <p class="text-white text-xs sm:text-sm leading-relaxed uppercase">Nunca repitas el mismo entrenamiento. +500
+            <p class="text-white text-xs sm:text-sm leading-relaxed uppercase">Nunca repitas el mismo entrenamiento.
+              +500
               ejercicios con bandas elásticas a tu disposición para variar siempre.</p>
           </div>
           <!-- Orange stripes decoration -->
@@ -569,22 +573,19 @@
 
       <div class="grid grid-cols-1 sm:grid-cols-3 gap-5 max-w-3xl mx-auto">
         <!-- Testimonial 1 -->
-        <div class="rounded-2xl border border-slate-700/40 overflow-hidden relative" style="aspect-ratio: 0.4838709677419355 / 1;">
-          <video class="w-full h-full testimonial-crop" controls playsinline controlsList="nodownload" loading="lazy">
-            <source src="videos/site_depoimento_01_esp.mp4" type="video/mp4">
-          </video>
+        <div class="rounded-2xl border border-slate-700/40 overflow-hidden relative">
+          <div class="testimonial-mask"></div>
+          <script src="https://fast.wistia.com/player.js" async></script><script src="https://fast.wistia.com/embed/oy68jve8k7.js" async type="module"></script><style>wistia-player[media-id='oy68jve8k7']:not(:defined) { background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/oy68jve8k7/swatch'); display: block; filter: blur(5px); padding-top:206.39%; }</style> <wistia-player media-id="oy68jve8k7" aspect="0.4845222072678331"></wistia-player>
         </div>
         <!-- Testimonial 2 -->
-        <div class="rounded-2xl border border-slate-700/40 overflow-hidden relative" style="aspect-ratio: 0.5625 / 1;">
-          <video class="w-full h-full testimonial-crop" controls playsinline controlsList="nodownload" loading="lazy">
-            <source src="videos/site_depoimento_02_esp.mp4" type="video/mp4">
-          </video>
+        <div class="rounded-2xl border border-slate-700/40 overflow-hidden relative">
+          <div class="testimonial-mask"></div>
+          <script src="https://fast.wistia.com/player.js" async></script><script src="https://fast.wistia.com/embed/opsxyanlfm.js" async type="module"></script><style>wistia-player[media-id='opsxyanlfm']:not(:defined) { background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/opsxyanlfm/swatch'); display: block; filter: blur(5px); padding-top:177.78%; }</style> <wistia-player media-id="opsxyanlfm" aspect="0.5625"></wistia-player>
         </div>
         <!-- Testimonial 3 -->
-        <div class="rounded-2xl border border-slate-700/40 overflow-hidden relative" style="aspect-ratio: 0.5625 / 1;">
-          <video class="w-full h-full testimonial-crop" controls playsinline controlsList="nodownload" loading="lazy">
-            <source src="videos/site_depoimento_03_esp.mp4" type="video/mp4">
-          </video>
+        <div class="rounded-2xl border border-slate-700/40 overflow-hidden relative">
+          <div class="testimonial-mask"></div>
+          <script src="https://fast.wistia.com/player.js" async></script><script src="https://fast.wistia.com/embed/709uh58r5i.js" async type="module"></script><style>wistia-player[media-id='709uh58r5i']:not(:defined) { background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/709uh58r5i/swatch'); display: block; filter: blur(5px); padding-top:177.78%; }</style> <wistia-player media-id="709uh58r5i" aspect="0.5625"></wistia-player>
         </div>
       </div>
     </div>
@@ -614,7 +615,8 @@
               <line x1="9" y1="9" x2="15" y2="15" />
             </svg>
           </div>
-          <p class="text-white text-sm sm:text-base font-medium">Dejar de pagar gimnasio y construir tu figura con bandas elásticas
+          <p class="text-white text-sm sm:text-base font-medium">Dejar de pagar gimnasio y construir tu figura con
+            bandas elásticas
             en casa</p>
         </div>
         <!-- Item 2 - Verde -->
@@ -629,7 +631,8 @@
               <line x1="15" y1="9" x2="15.01" y2="9" />
             </svg>
           </div>
-          <p class="text-white text-sm sm:text-base font-medium">Variar los ejercicios y mantener la motivación siempre al
+          <p class="text-white text-sm sm:text-base font-medium">Variar los ejercicios y mantener la motivación siempre
+            al
             máximo</p>
         </div>
         <!-- Item 3 - Laranja -->
@@ -644,7 +647,8 @@
               <line x1="3" y1="10" x2="21" y2="10" />
             </svg>
           </div>
-          <p class="text-white text-sm sm:text-base font-medium">Armar semanas completas de entrenamiento en minutos sin salir
+          <p class="text-white text-sm sm:text-base font-medium">Armar semanas completas de entrenamiento en minutos sin
+            salir
             de casa</p>
         </div>
         <!-- Item 4 - Azul -->
@@ -693,11 +697,12 @@
         <!-- Bonus 1 -->
         <div
           class="bg-dark-card rounded-xl border border-slate-700/40 overflow-hidden hover:border-lime-neon/30 transition-colors duration-300">
-          <img src="images/bonus_treinos_funcionais.png" alt="+500 Entrenamientos Funcionales" class="w-full h-44 object-cover"
-            loading="lazy" decoding="async" />
+          <img src="images/bonus_treinos_funcionais.png" alt="+500 Entrenamientos Funcionales"
+            class="w-full h-44 object-cover" loading="lazy" decoding="async" />
           <div class="p-5 text-center">
             <h3 class="font-bold text-white text-sm uppercase mb-2">+500 Entrenamientos Funcionales 100% en Videos</h3>
-            <p class="text-slate-400 text-xs leading-relaxed mb-3">Biblioteca completa de entrenamientos funcionales en video
+            <p class="text-slate-400 text-xs leading-relaxed mb-3">Biblioteca completa de entrenamientos funcionales en
+              video
               para hacer en casa</p>
             <p class="text-sm"><span class="text-slate-500 line-through">$ 17</span> <span
                 class="text-lime-neon font-bold">GRATIS</span></p>
@@ -706,12 +711,14 @@
         <!-- Bonus 2 -->
         <div
           class="bg-dark-card rounded-xl border border-slate-700/40 overflow-hidden hover:border-lime-neon/30 transition-colors duration-300">
-          <img src="images/bonus_protocolos.png" alt="Protocolos Listos" class="w-full h-44 object-cover"
-            loading="lazy" decoding="async" />
+          <img src="images/bonus_protocolos.png" alt="Protocolos Listos" class="w-full h-44 object-cover" loading="lazy"
+            decoding="async" />
           <div class="p-5 text-center">
-            <h3 class="font-bold text-white text-sm uppercase mb-2">Protocolos Listos de 30, 60 y 90 Días con Bandas Elásticas
+            <h3 class="font-bold text-white text-sm uppercase mb-2">Protocolos Listos de 30, 60 y 90 Días con Bandas
+              Elásticas
             </h3>
-            <p class="text-slate-400 text-xs leading-relaxed mb-3">Entrenamientos organizados, progresión definida y resultado
+            <p class="text-slate-400 text-xs leading-relaxed mb-3">Entrenamientos organizados, progresión definida y
+              resultado
               planificado. Es solo seguir el protocolo y evolucionar semana tras semana.</p>
             <p class="text-sm"><span class="text-slate-500 line-through">$ 17</span> <span
                 class="text-lime-neon font-bold">GRATIS</span></p>
@@ -736,7 +743,8 @@
           <img src="images/bonus_guia_definicao.png" alt="Guía de Definición" class="w-full h-44 object-cover"
             loading="lazy" decoding="async" />
           <div class="p-5 text-center">
-            <h3 class="font-bold text-white text-sm uppercase mb-2">Guía de Definición y Quema de Grasa con Bandas Elásticas
+            <h3 class="font-bold text-white text-sm uppercase mb-2">Guía de Definición y Quema de Grasa con Bandas
+              Elásticas
             </h3>
             <p class="text-slate-400 text-xs leading-relaxed mb-3">Estrategias prácticas para acelerar la quema de
               grasa usando solo bandas elásticas. Entrenar con enfoque en definición es mejor.</p>
@@ -751,7 +759,8 @@
             loading="lazy" decoding="async" />
           <div class="p-5 text-center">
             <h3 class="font-bold text-white text-sm uppercase mb-2">Guía de Progresión Inteligente (Sin Gimnasio)</h3>
-            <p class="text-slate-400 text-xs leading-relaxed mb-3">Aprende a aumentar la intensidad, tensión y dificultad
+            <p class="text-slate-400 text-xs leading-relaxed mb-3">Aprende a aumentar la intensidad, tensión y
+              dificultad
               incluso entrenando solo con bandas elásticas. Sin progresión, no hay crecimiento.</p>
             <p class="text-sm"><span class="text-slate-500 line-through">$ 7</span> <span
                 class="text-lime-neon font-bold">GRATIS</span></p>
@@ -763,9 +772,11 @@
           <img src="images/bonus_mini_curso.png" alt="Mini Curso" class="w-full h-44 object-cover" loading="lazy"
             decoding="async" />
           <div class="p-5 text-center">
-            <h3 class="font-bold text-white text-sm uppercase mb-2">Mini Curso: Cómo Armar Tu Propio Entrenamiento desde Cero
+            <h3 class="font-bold text-white text-sm uppercase mb-2">Mini Curso: Cómo Armar Tu Propio Entrenamiento desde
+              Cero
             </h3>
-            <p class="text-slate-400 text-xs leading-relaxed mb-3">Aprende a estructurar entrenamientos inteligentes, combinar
+            <p class="text-slate-400 text-xs leading-relaxed mb-3">Aprende a estructurar entrenamientos inteligentes,
+              combinar
               grupos musculares y crear evolución continua.</p>
             <p class="text-sm"><span class="text-slate-500 line-through">$ 12</span> <span
                 class="text-lime-neon font-bold">GRATIS</span></p>
@@ -835,7 +846,8 @@
 
           <div class="text-center mb-5 mt-4">
             <h3 class="font-black text-lg sm:text-xl uppercase text-white mb-2">Paquete Completo</h3>
-            <p class="text-slate-400 text-sm">+1000 Videos en Total, sumando Bandas Elásticas y Entrenamientos Funcionales</p>
+            <p class="text-slate-400 text-sm">+1000 Videos en Total, sumando Bandas Elásticas y Entrenamientos
+              Funcionales</p>
           </div>
           <div class="text-center mb-5">
             <span class="text-slate-500 text-sm line-through">De $ 47</span>
@@ -913,8 +925,10 @@
           <span class="text-lime-neon">Garantía</span> de 7 Días
         </h2>
         <p class="text-slate-400 text-base sm:text-lg leading-relaxed mb-6">
-          Si por cualquier motivo no quedas satisfecho con los ejercicios y entrenamientos con bandas elásticas, solo envía un
-          correo electrónico dentro de 7 días y te devolvemos <strong class="text-white">el 100% de tu dinero</strong>. Sin preguntas,
+          Si por cualquier motivo no quedas satisfecho con los ejercicios y entrenamientos con bandas elásticas, solo
+          envía un
+          correo electrónico dentro de 7 días y te devolvemos <strong class="text-white">el 100% de tu dinero</strong>.
+          Sin preguntas,
           sin burocracia.
         </p>
         <p class="text-white font-bold text-lg sm:text-xl">
@@ -947,7 +961,8 @@
           </button>
           <div class="faq-answer px-5">
             <p class="text-slate-400 text-sm leading-relaxed">Tras la confirmación del pago, recibirás inmediatamente
-              un correo electrónico con el enlace de acceso a la plataforma con todos los ejercicios y entrenamientos con bandas elásticas en video y los
+              un correo electrónico con el enlace de acceso a la plataforma con todos los ejercicios y entrenamientos
+              con bandas elásticas en video y los
               bonos (si corresponde).</p>
           </div>
         </div>
@@ -972,7 +987,8 @@
             <i data-lucide="chevron-down" class="faq-chevron w-5 h-5 text-slate-400 shrink-0"></i>
           </button>
           <div class="faq-answer px-5">
-            <p class="text-slate-400 text-sm leading-relaxed">¡El acceso es de por vida! Una vez adquirido, puedes acceder
+            <p class="text-slate-400 text-sm leading-relaxed">¡El acceso es de por vida! Una vez adquirido, puedes
+              acceder
               al contenido cuantas veces quieras, para siempre.</p>
           </div>
         </div>
@@ -984,7 +1000,8 @@
             <i data-lucide="chevron-down" class="faq-chevron w-5 h-5 text-slate-400 shrink-0"></i>
           </button>
           <div class="faq-answer px-5">
-            <p class="text-slate-400 text-sm leading-relaxed">¡Sí! Periódicamente se añaden nuevos ejercicios y entrenamientos con bandas elásticas sin coste adicional para quienes ya son miembros.</p>
+            <p class="text-slate-400 text-sm leading-relaxed">¡Sí! Periódicamente se añaden nuevos ejercicios y
+              entrenamientos con bandas elásticas sin coste adicional para quienes ya son miembros.</p>
           </div>
         </div>
       </div>
@@ -1115,7 +1132,8 @@
           </li>
           <li class="flex items-start gap-2 text-white">
             <span class="text-orange-bright mt-0.5 shrink-0">★</span>
-            <span><strong class="text-orange-bright">BONO:</strong> +500 Entrenamientos Funcionales 100% en Videos</span>
+            <span><strong class="text-orange-bright">BONO:</strong> +500 Entrenamientos Funcionales 100% en
+              Videos</span>
           </li>
           <li class="flex items-start gap-2 text-white">
             <span class="text-orange-bright mt-0.5 shrink-0">★</span>
