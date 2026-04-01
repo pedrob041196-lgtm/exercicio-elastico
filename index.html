@@ -4,14 +4,17 @@
 <head>
   <!-- Meta Pixel Code -->
   <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
+    !function (f, b, e, v, n, t, s) {
+      if (f.fbq) return; n = f.fbq = function () {
+        n.callMethod ?
+        n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+      n.queue = []; t = b.createElement(e); t.async = !0;
+      t.src = v; s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
     fbq('init', '973023315299646');
     fbq('track', 'PageView');
   </script>
@@ -175,12 +178,7 @@
   </style>
 
   <!-- UTMify Tracking -->
-  <script
-    src="https://cdn.utmify.com.br/scripts/utms/latest.js"
-    data-utmify-prevent-subids
-    async
-    defer
-  ></script>
+  <script src="https://cdn.utmify.com.br/scripts/utms/latest.js" data-utmify-prevent-subids async defer></script>
 </head>
 
 <body class="bg-dark text-white antialiased">
@@ -223,6 +221,7 @@
         estímulos e usar a "resistência inteligente" para <strong class="text-orange-bright">definir o corpo inteiro na
           sua sala</strong>.
       </p>
+
 
       <!-- CTA -->
       <a href="https://pay.hotmart.com/P105178985P?checkoutMode=10" target="_blank"
@@ -1160,8 +1159,7 @@
       </div>
 
       <!-- CTA Button -->
-      <a href="https://pay.hotmart.com/P105178985P?checkoutMode=10" target="_blank"
-        onclick="closeUpsellModal()"
+      <a href="https://pay.hotmart.com/P105178985P?checkoutMode=10" target="_blank" onclick="closeUpsellModal()"
         class="cta-btn block w-full text-center bg-lime-neon text-gray-900 font-extrabold text-base uppercase py-4 rounded-full shadow-lg shadow-lime-neon/20 animate-pulse_btn mb-3">
         🔒 Quero o Desconto Agora
       </a>
