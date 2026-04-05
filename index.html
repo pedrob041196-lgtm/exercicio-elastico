@@ -1195,6 +1195,34 @@
   </script>
 
 
+  <!-- URL Parameter Propagation -->
+  <script>
+    (function() {
+      const searchParams = window.location.search;
+      if (!searchParams) return;
+
+      const propagateParams = () => {
+        const links = document.querySelectorAll('a[href]');
+        links.forEach(link => {
+          const href = link.getAttribute('href');
+          if (href && !href.startsWith('#') && !href.startsWith('javascript:') && !link.dataset.paramsPropagated) {
+            const separator = href.includes('?') ? '&' : '?';
+            const cleanParams = searchParams.startsWith('?') ? searchParams.substring(1) : searchParams;
+            link.setAttribute('href', href + separator + cleanParams);
+            link.dataset.paramsPropagated = "true";
+          }
+        });
+      };
+
+      // Run on load
+      propagateParams();
+
+      // Run when the upsell modal or any other content might be shown/changed
+      const observer = new MutationObserver(propagateParams);
+      observer.observe(document.body, { childList: true, subtree: true });
+    })();
+  </script>
 </body>
+
 
 </html>
