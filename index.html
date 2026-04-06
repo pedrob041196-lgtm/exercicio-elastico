@@ -196,7 +196,16 @@
       <!-- VSL Video -->
       <div class="w-full max-w-2xl mb-6 rounded-2xl overflow-hidden relative">
         <div class="video-mask"></div>
-        <script src="https://fast.wistia.com/player.js" async></script><script src="https://fast.wistia.com/embed/kj6k4ifcnf.js" async type="module"></script><style>wistia-player[media-id='kj6k4ifcnf']:not(:defined) { background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/kj6k4ifcnf/swatch'); display: block; filter: blur(5px); padding-top:100.0%; }</style> <wistia-player media-id="kj6k4ifcnf" aspect="1.0"></wistia-player>
+        <script src="https://fast.wistia.com/player.js" async></script>
+        <script src="https://fast.wistia.com/embed/kj6k4ifcnf.js" async type="module"></script>
+        <style>
+          wistia-player[media-id='kj6k4ifcnf']:not(:defined) {
+            background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/kj6k4ifcnf/swatch');
+            display: block;
+            filter: blur(5px);
+            padding-top: 100.0%;
+          }
+        </style> <wistia-player media-id="kj6k4ifcnf" aspect="1.0"></wistia-player>
       </div>
 
       <!-- Subtítulo -->
@@ -575,17 +584,44 @@
         <!-- Testimonial 1 -->
         <div class="rounded-2xl border border-slate-700/40 overflow-hidden relative">
           <div class="testimonial-mask"></div>
-          <script src="https://fast.wistia.com/player.js" async></script><script src="https://fast.wistia.com/embed/oy68jve8k7.js" async type="module"></script><style>wistia-player[media-id='oy68jve8k7']:not(:defined) { background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/oy68jve8k7/swatch'); display: block; filter: blur(5px); padding-top:206.39%; }</style> <wistia-player media-id="oy68jve8k7" aspect="0.4845222072678331"></wistia-player>
+          <script src="https://fast.wistia.com/player.js" async></script>
+          <script src="https://fast.wistia.com/embed/oy68jve8k7.js" async type="module"></script>
+          <style>
+            wistia-player[media-id='oy68jve8k7']:not(:defined) {
+              background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/oy68jve8k7/swatch');
+              display: block;
+              filter: blur(5px);
+              padding-top: 206.39%;
+            }
+          </style> <wistia-player media-id="oy68jve8k7" aspect="0.4845222072678331"></wistia-player>
         </div>
         <!-- Testimonial 2 -->
         <div class="rounded-2xl border border-slate-700/40 overflow-hidden relative">
           <div class="testimonial-mask"></div>
-          <script src="https://fast.wistia.com/player.js" async></script><script src="https://fast.wistia.com/embed/opsxyanlfm.js" async type="module"></script><style>wistia-player[media-id='opsxyanlfm']:not(:defined) { background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/opsxyanlfm/swatch'); display: block; filter: blur(5px); padding-top:177.78%; }</style> <wistia-player media-id="opsxyanlfm" aspect="0.5625"></wistia-player>
+          <script src="https://fast.wistia.com/player.js" async></script>
+          <script src="https://fast.wistia.com/embed/opsxyanlfm.js" async type="module"></script>
+          <style>
+            wistia-player[media-id='opsxyanlfm']:not(:defined) {
+              background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/opsxyanlfm/swatch');
+              display: block;
+              filter: blur(5px);
+              padding-top: 177.78%;
+            }
+          </style> <wistia-player media-id="opsxyanlfm" aspect="0.5625"></wistia-player>
         </div>
         <!-- Testimonial 3 -->
         <div class="rounded-2xl border border-slate-700/40 overflow-hidden relative">
           <div class="testimonial-mask"></div>
-          <script src="https://fast.wistia.com/player.js" async></script><script src="https://fast.wistia.com/embed/709uh58r5i.js" async type="module"></script><style>wistia-player[media-id='709uh58r5i']:not(:defined) { background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/709uh58r5i/swatch'); display: block; filter: blur(5px); padding-top:177.78%; }</style> <wistia-player media-id="709uh58r5i" aspect="0.5625"></wistia-player>
+          <script src="https://fast.wistia.com/player.js" async></script>
+          <script src="https://fast.wistia.com/embed/709uh58r5i.js" async type="module"></script>
+          <style>
+            wistia-player[media-id='709uh58r5i']:not(:defined) {
+              background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/709uh58r5i/swatch');
+              display: block;
+              filter: blur(5px);
+              padding-top: 177.78%;
+            }
+          </style> <wistia-player media-id="709uh58r5i" aspect="0.5625"></wistia-player>
         </div>
       </div>
     </div>
@@ -1195,33 +1231,6 @@
   </script>
 
 
-  <!-- URL Parameter Propagation -->
-  <script>
-    (function() {
-      const searchParams = window.location.search;
-      if (!searchParams) return;
-
-      const propagateParams = () => {
-        const links = document.querySelectorAll('a[href]');
-        links.forEach(link => {
-          const href = link.getAttribute('href');
-          if (href && !href.startsWith('#') && !href.startsWith('javascript:') && !link.dataset.paramsPropagated) {
-            const separator = href.includes('?') ? '&' : '?';
-            const cleanParams = searchParams.startsWith('?') ? searchParams.substring(1) : searchParams;
-            link.setAttribute('href', href + separator + cleanParams);
-            link.dataset.paramsPropagated = "true";
-          }
-        });
-      };
-
-      // Run on load
-      propagateParams();
-
-      // Run when the upsell modal or any other content might be shown/changed
-      const observer = new MutationObserver(propagateParams);
-      observer.observe(document.body, { childList: true, subtree: true });
-    })();
-  </script>
 </body>
 
 
